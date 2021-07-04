@@ -2,6 +2,7 @@ package org.example.app.repo;
 
 
 import org.apache.log4j.Logger;
+import org.example.app.services.IdProvider;
 import org.example.web.dto.Book;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Repository;
