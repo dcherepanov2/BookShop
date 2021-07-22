@@ -1,4 +1,4 @@
-package org.example.app.services;
+package org.example.services;
 
 import org.apache.log4j.Logger;
 import org.example.web.dto.LoginForm;

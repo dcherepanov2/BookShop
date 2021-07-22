@@ -1,4 +1,4 @@
-package org.example.app.services;
+package org.example.services;
 
 import org.example.web.dto.Book;
 import org.springframework.beans.BeansException;

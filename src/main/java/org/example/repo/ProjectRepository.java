@@ -1,4 +1,4 @@
-package org.example.app.repo;
+package org.example.repo;
 
 import org.example.web.dto.Book;
 

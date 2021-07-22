@@ -1,8 +1,7 @@
-package org.example.app.repo;
-
+package org.example.services;
 
 import org.apache.log4j.Logger;
-import org.example.app.services.IdProvider;
+import org.example.repo.ProjectRepository;
 import org.example.web.dto.Book;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Repository;
@@ -11,13 +10,12 @@ import java.util.*;
 
 
 @Repository
-
 public class BookRepository implements ProjectRepository<Book> {
 
     private final Logger logger = Logger.getLogger(BookRepository.class);
 
     private final List<Book> repo = new ArrayList<>();
-    private ApplicationContext context;//используется в 26 строчке
+    private ApplicationContext context;//используется в 30 строчке
 
     @Override
     public List<Book> retrieveAll() {

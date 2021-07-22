@@ -1,7 +1,7 @@
 package org.example.web.controllers;
 
 import org.apache.log4j.Logger;
-import org.example.app.services.BookService;
+import org.example.services.BookService;
 import org.example.web.dto.Book;
 import org.example.web.dto.PlaceHolder;
 import org.springframework.beans.factory.annotation.Autowired;
