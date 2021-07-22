@@ -3,14 +3,16 @@ package org.example.services;
 import org.apache.log4j.Logger;
 import org.example.repo.ProjectRepository;
 import org.example.web.dto.Book;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 
 @Repository
-public class BookRepository implements ProjectRepository<Book> {
+public class BookRepository implements ProjectRepository<Book>, ApplicationContextAware {
 
     private final Logger logger = Logger.getLogger(BookRepository.class);
 
@@ -108,5 +110,10 @@ public class BookRepository implements ProjectRepository<Book> {
             }
         }
         return list;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.context = applicationContext;
     }
 }
