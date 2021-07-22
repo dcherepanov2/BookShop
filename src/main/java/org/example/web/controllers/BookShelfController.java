@@ -20,7 +20,7 @@ import java.util.List;
 public class BookShelfController {
 
     private final Logger logger = Logger.getLogger(BookShelfController.class);
-    private BookService bookService;
+    private final BookService bookService;
     private List<Book> findList = new ArrayList<>();
 
     @Autowired

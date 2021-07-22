@@ -34,13 +34,15 @@ public class BookService {
         bookRepo.store(book);
     }
 
-    public boolean removeBookById(String bookIdToRemove) {
+    public boolean removeBookById(String bookIdToRemove) {//собираюсь в будущем использовать
+        // return функции, так что оставляю метод булеаном
         return bookRepo.removeItemById(bookIdToRemove);
     }
 
     public void removeBookByAuthor(String Author){
         logger.info("Service func with remove book to author work is normal");
-        while (bookRepo.removeItemByAuthor(Author));
+        while (bookRepo.removeItemByAuthor(Author));//более локаничного способа перебора всех элементов не придумал
+        //аналогично с варнингом ниже
     }
     public void removeBookByTitle(String title){
         logger.info("Service func with remove book to author work is normal");

@@ -2,13 +2,10 @@ package org.example;
 
 import org.example.config.WebContextConfig;
 import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.ContextCleanupListener;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
-
-import javax.servlet.DispatcherType;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
@@ -26,7 +23,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
 
         //loading web config
         //XmlWebApplicationContext webContext = new XmlWebApplicationContext();
-        //webContext.setConfigLocation("classpath:we-config.xml");
+        //webContext.setConfigLocation("classpath:web-config.xml");
         AnnotationConfigWebApplicationContext webContext = new AnnotationConfigWebApplicationContext();
         webContext.register(WebContextConfig.class);
 

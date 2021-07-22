@@ -18,28 +18,28 @@ public class IdProvider implements InitializingBean, DisposableBean, BeanPostPro
         return this.hashCode() + "_" + book.hashCode();
     }
 
-    private void initIdProvider() {
-        logger.info("provider_INIT");
-    }
-
-    private void destroyIdProvider() {
-        logger.info("provider_DESTROY");
-    }
-
-    private  void defaultInit(){
-        logger.info("provider_DEFAULT");
-    }
-     private void defaultDestroy(){
-         logger.info("default_DESTROY");
-     }
+//    private void initIdProvider() {
+//        logger.info("provider_INIT");
+//    }
+//
+//    private void destroyIdProvider() {
+//        logger.info("provider_DESTROY");
+//    }
+//
+//    private  void defaultInit(){
+//        logger.info("provider_DEFAULT");
+//    }
+//     private void defaultDestroy(){
+//         logger.info("default_DESTROY");
+//     }
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void afterPropertiesSet(){
         logger.info("provider afterPropertiesSet invoked");
     }
 
     @Override
-    public void destroy() throws Exception {
+    public void destroy(){
 
     }
 
@@ -62,5 +62,4 @@ public class IdProvider implements InitializingBean, DisposableBean, BeanPostPro
     public void postConstructIdProvider(){
 
     }
-    /////
 }
