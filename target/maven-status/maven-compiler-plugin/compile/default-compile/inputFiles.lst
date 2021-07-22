@@ -1,12 +1,14 @@
+D:\skillbox_dz\dz-1_2\src\main\java\org\example\config\WebContextConfig.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\services\BookRepository.java
-D:\skillbox_dz\dz-1_2\src\main\java\org\example\services\LoginService.java
-D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\controllers\ErrorController.java
+D:\skillbox_dz\dz-1_2\src\main\java\org\example\WebAppInitializer.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\services\IdProvider.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\controllers\BookShelfController.java
-D:\skillbox_dz\dz-1_2\src\main\java\org\example\repo\ProjectRepository.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\controllers\BookShelfControllerException.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\dto\Book.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\controllers\LoginController.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\dto\LoginForm.java
+D:\skillbox_dz\dz-1_2\src\main\java\org\example\services\LoginService.java
+D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\controllers\ErrorController.java
+D:\skillbox_dz\dz-1_2\src\main\java\org\example\repo\ProjectRepository.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\web\dto\PlaceHolder.java
 D:\skillbox_dz\dz-1_2\src\main\java\org\example\services\BookService.java

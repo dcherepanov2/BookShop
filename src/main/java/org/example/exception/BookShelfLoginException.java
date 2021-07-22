@@ -1,6 +1,6 @@
-package org.example.web.controllers;
+package org.example.exception;
 
-public class BookShelfControllerException extends Exception  {
+public class BookShelfLoginException extends Exception  {
     private String message;
 
     @Override
@@ -12,7 +12,7 @@ public class BookShelfControllerException extends Exception  {
         this.message = message;
     }
 
-    public BookShelfControllerException(String message) {
+    public BookShelfLoginException(String message) {
         this.message = message;
     }
 }
